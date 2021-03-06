@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parth Raj Sharma</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0px;
+        }
+        
+        section:target {
+            background-color: cyan;
+        }
+        
+        #main-header {
+            background-image: url(ps.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 75vh;
+            opacity: 1;
+            padding-top: 20px;
+        }
+        
+        .pa {
+            list-style: none;
+            text-align: center;
+            padding-left: 0px;
+            font-family: monospace;
+            background-color: #00BCD4;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+        .ul {
+            list-style: none;
+            text-align: center;
+            padding-left: 0px;
+            font-family: monospace;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .ul li {
+            display: inline-block;
+            color: white;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .pa li:hover {
+            cursor: pointer;
+            color: white;
+            background-image: linear-gradient(black, #00BCD4);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: 1s;
+        }
+        
+        .pa li {
+            display: inline-block;
+            margin-left: 5px;
+            padding: 10px 10px 10px 10px;
+            margin-right: 5px;
+            color: white;
+            margin-top: 0px;
+        }
+        
+        .ul li a {
+            color: white;
+            padding: 2px;
+        }
+        
+        .ul li a i {
+            padding: 8px;
+        }
+        
+        .pa li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .ul li a i:hover {
+            border-radius: 50%;
+            box-shadow: 0px 0px 4px 6px rgba(230, 196, 196, 0.3);
+        }
+        
+        .pa {
+            text-align: center;
+        }
+        
+        .name {
+            color: white;
+            font-family: monospace;
+            text-align: center;
+            margin-top: 6vh;
+            font-size: 40px;
+        }
+        
+        #about {
+            height: auto;
+            width: 100%;
+            padding-bottom: 70px;
+        }
+        
+        #about .my-image {
+            height: 10rem;
+            width: 10rem;
+            margin: auto;
+        }
+        
+        .my-image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px 10px black;
+            margin-top: -4vh;
+            transition: 5s linear;
+        }
+        
+        .my-image img:hover {
+            transform: rotate(360deg);
+        }
+        
+        #about p {
+            margin: auto;
+            color: grey;
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-family: monospace;
+            font-size: 1.5rem;
+        }
+        
+        #skills {
+            background-color: #d3d3d336;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        #skills h1 {
+            width: auto;
+            padding: 20px 10px 20px;
+            margin: 10px auto;
+            font-family: monospace;
+        }
+        
+        #skills .span {
+            color: #2857a4;
+            font-size: 40px;
+        }
+        
+        .skills-div {
+            width: 70%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .skills-div div {
+            background-color: black;
+            width: 300px;
+            height: 50px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 10px #0000001f;
+        }
+        
+        .skills-div div:hover {
+            box-shadow: 0px 0px 10px 1px black;
+        }
+        
+        .skills-div .cplus {
+            background-color: #ff7f00;
+            width: 80%;
+            height: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            box-shadow: 0px 0px 2px 2px #ff7f0066;
+            overflow: hidden;
+        }
+        
+        .cplus span {
+            color: white;
+            font-size: 20px;
+            margin-top: 8px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        
+        .skills-div .cplus :hover {
+            box-shadow: 0px 0px 5px 5px #ff7f0066;
+            background-color: red;
+        }
+        
+        .skills-div .javascript {
+            background-color: #cddc39b8;
+            width: 95%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 2px 2px #cddc39b8;
+            overflow: hidden;
+        }
+        
+        .javascript span {
+            color: white;
+            font-size: 20px;
+            margin-top: 8px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        
+        .skills-div .java {
+            background-color: #2196f3a8;
+            width: 85%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 2px 2px #2196f3a8;
+            overflow: hidden;
+        }
+        
+        .java span {
+            color: white;
+            font-size: 20px;
+            margin-top: 8px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        
+        .skills-div .dbms {
+            background-color: #9c27b07a;
+            width: 95%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 2px 2px #9c27b07a;
+            overflow: hidden;
+        }
+        
+        .dbms span {
+            color: white;
+            font-size: 20px;
+            margin-top: 8px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        
+        .skills-div .nodejs {
+            background-color: #00ffcd9e;
+            width: 95%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 2px 2px #00ffcd9e;
+            overflow: hidden;
+        }
+        
+        .nodejs span {
+            color: white;
+            font-size: 20px;
+            margin-top: 8px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        
+        .skills-div .sql {
+            background-color: #8b6060;
+            width: 96%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 2px 2px #8b6060;
+            overflow: hidden;
+        }
+        
+        .sql span {
+            color: white;
+            font-size: 20px;
+            margin-top: 8px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        
+        #portfolio {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #d3d3d336;
+        }
+        
+        #portfolio h1 {
+            width: auto;
+            padding: 20px 10px 20px;
+            margin: 10px auto;
+            font-family: monospace;
+        }
+        
+        #portfolio h1 span {
+            color: #2857a4;
+            font-size: 40px;
+        }
+        
+        .portfolio-div {
+            width: 70%;
+            margin: 30px auto;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .portfolio-div div {
+            width: 300px;
+            height: 250px;
+            background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png);
+            background-size: contain;
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 15px 2px grey;
+            border-radius: 5px;
+        }
+        
+        .portfolio-div div:nth-child(2n) {
+            background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png);
+        }
+        
+        .portfolio-div div:hover {
+            box-shadow: 0px 0px 15px 2px black;
+        }
+        
+        #experience {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #experience h1 {
+            color: ;
+            font-family: monospace;
+            width: auto;
+            padding: 20px 10px 20px;
+            margin: 10px auto;
+        }
+        
+        #experience h1 span {
+            font-size: 40px;
+            color: #2857a4;
+        }
+        
+        .timeline {
+            width: 70%;
+            height: auto;
+            margin: 30px auto;
+            position: relative;
+            background: linear-gradient(cyan, orange);
+            border-radius: 20px;
+        }
+        
+        .timeline-box {
+            position: relative;
+            width: 300px;
+            margin: 50px;
+            height: 200px;
+            left: 5%;
+            background: radial-gradient(white, orange);
+            border-radius: 10px;
+        }
+        
+        .timeline-box:hover {
+            box-shadow: 0px 0px 15px 2px black;
+            background: radial-gradient(cyan, white);
+        }
+        
+        .timeline-box:nth-child(2n) {
+            left: 62%;
+        }
+        
+        .timeline-box:nth-child(2n+1)::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 20%;
+            left: 138%;
+            z-index: 2
+        }
+        
+        .timeline-box:nth-child(2n)::before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: orange;
+            position: absolute;
+            top: 20%;
+            right: 154%;
+            z-index: 2;
+        }
+        
+        .traveller {
+            width: 0px;
+            height: 80%;
+            position: absolute;
+            border: 2px dashed #00000078;
+            top: 10%;
+            left: 50%;
+            z-index: 1;
+        }
+        
+        .aero {
+            font-size: 40px;
+            transform: rotate(90deg);
+            position: sticky;
+            top: 10%;
+            color: #e11111;
+            margin: 0px;
+            z-index: 1;
+        }
+        
+        .timeline-box p {
+            font-size: 2rem;
+            font-family: monospace;
+            color: #2857a4;
+            margin-left: 10px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+        
+        .timline-box p::before {
+            content: '';
+            background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-size: contain;
+        }
+        
+        .timeline-box .detail {
+            font-family: monospace;
+            font-size: 1.3rem;
+            color: #2857a4;
+        }
+        
+        #contact {
+            width: 100%;
+            height: auto;
+            background: linear-gradient(#2857a4, #403066);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        #contact h1 {
+            color: white;
+            font-family: monospace;
+            width: auto;
+            padding: 20px 10px 20px;
+            margin: 10px auto;
+        }
+        
+        #contact h1 span {
+            font-size: 40px;
+            color: white;
+        }
+        
+        #education {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(white, cyan)
+        }
+        
+        #education h1 {
+            color: ;
+            font-family: monospace;
+            width: auto;
+            padding: 20px 10px 20px;
+            margin: 10px auto;
+        }
+        
+        #education h1 span {
+            font-size: 40px;
+            color: #2857a4;
+        }
+        
+        .education {
+            width: 70%;
+            height: auto;
+            margin: 30px auto;
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+        }
+        
+        .education-box {
+            position: relative;
+            width: 300px;
+            margin: 50px;
+            height: 200px;
+            left: 5%;
+            background: radial-gradient(white, cyan);
+            border-radius: 10px;
+        }
+        
+        .education-box:hover {
+            box-shadow: 0px 0px 15px 2px black;
+            background: linear-gradient(white, cyan);
+        }
+        
+        .education-box:hover~.education {
+            box-shadow: 0px 0px 15px 2px black;
+            background: linear-gradient(white, cyan);
+        }
+        
+        .education-box:nth-child(2n) {
+            left: 62%;
+        }
+        
+        .education-box:nth-child(2n+1)::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 20%;
+            left: 138%;
+            z-index: 2
+        }
+        
+        .education-box:nth-child(2n)::before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: orange;
+            position: absolute;
+            top: 20%;
+            right: 154%;
+            z-index: 2;
+        }
+        
+        .education-box p {
+            font-size: 2rem;
+            font-family: monospace;
+            color: #2857a4;
+            margin-left: 10px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+        
+        .education-box .detail {
+            font-family: monospace;
+            font-size: 1.3rem;
+            color: #2857a4;
+        }
+        
+        .man {
+            font-size: 40px;
+            transform: rotate(90deg);
+            position: sticky;
+            top: 10%;
+            color: #e11111;
+            margin: 0px;
+            z-index: 1;
+            left: 0px;
+        }
+        
+        .man-traveller {
+            width: 0px;
+            height: 80%;
+            position: absolute;
+            border: 2px dashed #00000078;
+            top: 10%;
+            left: 50%;
+            z-index: 1;
+        }
+        
+        #contact .contact-form {
+            width: 70%;
+            margin: 10px auto;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: radial-gradient(#2857a4, #403066);
+            border-radius: 20px;
+        }
+        
+        .contact-form .login-box {
+            width: 400px;
+            height: 70%;
+            margin: 10px auto;
+            display: block;
+            border-radius: 20px;
+        }
+        
+        .contact-form .address {
+            width: 400px;
+            height: 70%;
+            margin: 10px auto;
+            border-radius: 20px;
+        }
+        
+        .contact-form .login-box:hover {
+            box-shadow: 0px 10px 15px 1px white;
+            background: radial-gradient(#2857a4, #403066);
+        }
+        
+        .contact-form .address:hover {
+            box-shadow: 0px 10px 15px 1px white;
+            background: radial-gradient(#2857a4, #403066);
+        }
+        
+        .login-box h1 {
+            font-family: monospace;
+            color: white;
+            font-size: 1.9rem;
+            font-weight: bold;
+            margin-top: 0px;
+        }
+        
+        .login-box p {
+            font-family: monospace;
+            color: white;
+            font-size: 1rem;
+            margin: 3px 5px 10px 10px;
+            width: 300px;
+            font-weight: bold;
+        }
+        
+        .login-box input {
+            border: none;
+            outline: none;
+            background: transparent;
+            color: white;
+            width: 300px;
+            height: 40px;
+            font-size: 25px;
+            font-family: monospace;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        
+        .login-box .username {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+        
+        .login-box .email {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+        
+        .login-box .subscribe {
+            margin: 20px;
+            /* background-color: black; */
+            border: 1px solid #795548;
+            border-radius: 5px;
+            padding: 10px;
+            width: 150px;
+            color: white;
+            font-size: 1.3rem;
+            font-family: monospace;
+            background: linear-gradient(#FF9800, #00000033);
+        }
+        
+        .address h1 {
+            font-family: monospace;
+            color: white;
+            font-size: 1.9rem;
+            font-weight: bold;
+            margin-top: 0px;
+        }
+        
+        .address p {
+            font-family: monospace;
+            color: white;
+            font-size: 1rem;
+            margin: 3px 5px 10px 10px;
+            width: 300px;
+            padding: 5px;
+            font-weight: bold;
+        }
+        
+        .contact-form .social-media-of-me {
+            width: 100%;
+            height: 70px;
+            margin: 5px auto;
+        }
+        
+        .social-media-me h2 {
+            font-family: monospace;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-left: 30%;
+        }
+        
+        .contact-form .social-media-me {
+            width: 100%;
+            height: 70px;
+            margin: 5px auto;
+        }
+        
+        .social-media-me .fas .fa-heartbeat:hover {
+            color: red;
+        }
+        
+        @media screen and (max-width:768px) {
+            .traveller {
+                width: 0px;
+                height: 80%;
+                position: absolute;
+                border: 2px dashed #00000078;
+                top: 10%;
+                left: 5%;
+                z-index: 1;
+            }
+            .timeline-box:nth-child(2n+1)::after {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2
+            }
+            .timeline-box:nth-child(2n)::before {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: orange;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2;
+            }
+            .timeline-box:nth-child(2n) {
+                left: 5%;
+            }
+            .timeline {
+                width: 80%;
+            }
+            .skills-div div {
+                margin-bottom: 20px;
+            }
+            .skills-div {
+                margin-bottom: 150px;
+            }
+            .man-traveller {
+                width: 0px;
+                height: 80%;
+                position: absolute;
+                border: 2px dashed #00000078;
+                top: 10%;
+                left: 5%;
+                z-index: 1;
+            }
+            .education-box:nth-child(2n) {
+                left: 5%;
+            }
+            .education {
+                width: 80%;
+            }
+            .education-box:nth-child(2n+1)::after {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2
+            }
+            .education-box:nth-child(2n)::before {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: orange;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2;
+            }
+            #main-header {
+                background-size: cover;
+            }
+            .pa li {
+                list-style: none;
+                text-align: center;
+                padding-left: 0px;
+                font-family: monospace;
+                color: black;
+                font-size: 15px;
+                display: block;
+                overflow: hidden;
+                opacity: 0.8;
+                margin-bottom: 0px;
+                background: linear-gradient(to left, black, #00BCD4);
+                margin-left: 0px;
+            }
+            .pa li:hover {
+                opacity: 1;
+                transition: 0.5s;
+            }
+            .pa {
+                width: 230px;
+                height: 300px;
+                background: transparent;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                border-radius: 20px;
+            }
+            .pa .m {
+                font-size: 15px;
+                color: white;
+                background: transparent;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 1500px) {
+            .traveller {
+                width: 0px;
+                height: 80%;
+                position: absolute;
+                border: 2px dashed #00000078;
+                top: 10%;
+                left: 5%;
+                z-index: 1;
+            }
+            .timeline-box:nth-child(2n+1)::after {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2
+            }
+            .timeline-box:nth-child(2n)::before {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: orange;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2;
+            }
+            .timeline-box:nth-child(2n) {
+                left: 5%;
+            }
+            .timeline {
+                width: 80%;
+            }
+            .skills-div div {
+                margin-bottom: 20px;
+            }
+            .skills-div {
+                margin-bottom: 150px;
+            }
+            .man-traveller {
+                width: 0px;
+                height: 80%;
+                position: absolute;
+                border: 2px dashed #00000078;
+                top: 10%;
+                left: 5%;
+                z-index: 1;
+            }
+            .education-box:nth-child(2n) {
+                left: 5%;
+            }
+            .education {
+                width: 80%;
+            }
+            .education-box:nth-child(2n+1)::after {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2
+            }
+            .education-box:nth-child(2n)::before {
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: orange;
+                position: absolute;
+                top: 20%;
+                left: -20%;
+                z-index: 2;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="main-header">
+
+        <ul class="pa">
+            <li class="m">MENU</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div>
+            <h1 class="name">Parth Raj Sharma</h1>
+            <ul class="ul">
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+
+            </ul>
+        </div>
+
+
+    </header>
+    <main>
+        <section id="about">
+            <div class="my-image">
+                <img src="profile.jpg">
+            </div>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        </section>
+
+        <section id="skills">
+
+            <h1>
+                <span class="span">
+				<i class="fas fa-chalkboard-teacher"></i>
+			</span>
+                <span class="span">SKILLS</span>
+            </h1>
+
+            <div id="skill-container" class="skills-div">
+
+                <div class=".skills-progress">
+                    <div class="cplus" data-bar-width="85">
+                        <span>C++</span>
+                        <span>85%</span>
+                    </div>
+                </div>
+
+
+
+                <div class="">
+                    <div class="javascript" data-bar-width="95">
+                        <span>JavaScript</span>
+                        <span>95%</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="java" data-bar-width="85">
+                        <span>Java</span>
+                        <span>85%</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="nodejs" data-bar-width="90">
+                        <span>Node.js</span>
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="dbms" data-bar-width="95">
+                        <span>DBMS</span>
+                        <span>95%</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="sql" data-bar-width="96">
+                        <span>MySql</span>
+                        <span>96%</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="experience">
+            <h1>
+                <span><i class="fas fa-briefcase"></i></span>
+                <span>WORK EXPERIENCE</span>
+            </h1>
+            <div class="timeline bg-color">
+                <div class="timeline-box">
+                    <p>Coding Ninja Member</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">From MAY 2019-APRIL 2020</span>
+                    <p class="detail">I have worked in coding ninjas as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="timeline-box">
+                    <p>Coding Ninja Member</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">From MAY 2019-APRIL 2020</span>
+                    <p class="detail">I have worked in american express as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="timeline-box">
+                    <p>Coding Ninja Member</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">From MAY 2019-APRIL 2020</span>
+                    <p class="detail">I have worked in google as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="timeline-box">
+                    <p>Coding Ninja Member</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">From MAY 2019-APRIL 2020</span>
+                    <p class="detail">I have worked in amazon as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="traveller">
+                    <div class="aero">
+
+                        <i class="fas fa-fighter-jet"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="education">
+            <h1>
+                <span><i class="fas fa-briefcase"></i></span>
+                <span>EDUCATION</span>
+            </h1>
+            <div class="education">
+                <div class="education-box">
+                    <p>10TH FROM MDAV</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">APRIL 2014 CGPA:8.6</span>
+                    <p class="detail">I have worked in coding ninjas as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="education-box">
+                    <p>12TH FROM BPS</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">APRIL 2016 CGPA:9.2</span>
+                    <p class="detail">I have worked in american express as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="education-box">
+                    <p>JEE FROM FIITJEE</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">APRIL 2017 MARKS:95,125</span>
+                    <p class="detail">I have worked in google as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="education-box">
+                    <p>B.E CSE FROM CU</p>
+                    <span><img width="50" height="50" style="margin-left: 10px;" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"></span>
+                    <span style="font-family: monospace;font-size: 1.2rem;color: black;vertical-align: center;font-weight: bold;">JUNE 2021 CGPA:8.9</span>
+                    <p class="detail">I have worked in amazon as an internship web developer. Really, i enjoyed it that was an amazing experience for me because i'm doing my first intership</p>
+                </div>
+                <div class="man-traveller">
+                    <div class="man">
+
+                        <i class="fas fa-car-side"></i>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h1>
+                <span><i class="fas fa-portrait"></i></span>
+                <span>PORTFOLIO</span>
+            </h1>
+            <div class="portfolio-div">
+                <div class="portfolio-div1">
+
+                </div>
+                <div class="portfolio-div2">
+
+                </div>
+                <div class="portfolio-div2">
+
+                </div>
+                <div class="portfolio-div2">
+
+                </div>
+                <div class="portfolio-div2">
+
+                </div>
+                <div class="portfolio-div2">
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <section id="contact">
+            <h1>
+                <span><i class="fas fa-portrait"></i></span>
+                <span>CONTACT</span>
+            </h1>
+
+            <form class="contact-form">
+                <div class="login-box">
+                    <h1>GET INFO
+                    </h1>
+                    <p>GET COMPLETE INFORMATION ABOUT ME PLEASE ENTER FOLLOWING DETAILS AND SUBSCRIBE. AN PDF FILE WILL BE SEND ON YOUR ENTERED EMAIL.</p>
+
+                    <input type="text" name="username" placeholder="Your Good Name" class="username">
+                    <input type="email" name="email" placeholder="Enter Email" class="email">
+                    <button type="submit" name="subscribe" class="subscribe">SUBSCRIBE</button>
+                </div>
+                <div class="address">
+                    <h1>ADDRESS
+                    </h1>
+                    <p><i class="fas fa-map-marker-alt"></i> 249-P MODEL TOWN BHATTU(125053),HARYANA <br><br>
+                        <i class="fas fa-phone"></i> +91-8264810831<br><br><i class="far fa-envelope"></i> erparthsharmacool@gmail.com
+
+                    </p>
+                </div>
+                <div class="social-media-of-me">
+                    <ul class="ul">
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="social-media-me">
+                    <h2>THANKU FROM BOTTOM OF MY HEART <i class="fas fa-heartbeat"></i></h2>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <script src="resume.js">
+    </script>
+</body>
+
+</html>
